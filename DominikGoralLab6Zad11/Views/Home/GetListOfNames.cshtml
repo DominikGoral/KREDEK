@@ -1,0 +1,21 @@
+﻿@model List<string>
+@{
+    ViewBag.Title = "GetListOfNames";
+}
+
+<h2>Sprawdź swój produkt</h2>
+
+<html>
+<head>
+    <title>Get names</title>
+</head>
+<body>
+    <h2>Produkty</h2>
+    <ul>
+        @foreach (var furnitureName in Model)
+        {
+            <li>@Html.ActionLink(furnitureName, "GetFurnitureByName", "Home", new { model = furnitureName }, null)</li>
+        }
+    </ul>
+</body>
+</html>

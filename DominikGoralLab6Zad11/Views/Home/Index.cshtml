@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<html>
+<head>
+    @Styles.Render("~/Content/Styles.css")
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <div class="row">
+        <div id="clock"></div>
+        <div class="col-md-12">
+            <center><h1> Sklep meblowy </h1></center>
+        </div>
+        <script type="text/javascript" language="javascript">
+            function renderTime() {
+                var currentTime = new Date();
+                var diem = "AM";
+                var h = currentTime.getHours();
+                var m = currentTime.getMinutes();
+                var s = currentTime.getSeconds();
+
+                if (h == 0) {
+                    h = 12;
+                } else if (h > 12) {
+                    h = h - 12;
+                    diem = "PM";
+                }
+                if (h < 10) {
+                    h = "0" + h;
+                }
+                if (m < 10) {
+                    m = "0" + m;
+                }
+                if (s < 10) {
+                    s = "0" + s;
+                }
+                var myClock = document.getElementById('clock')
+                myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+                setTimeout('renderTime()', 1000);
+            }
+            renderTime();
+        </script>
+        <center>
+            <div id="mainFrame">
+                <div class="shopSection">
+                    <div class="overlay">
+                        <center>
+                            <a href="@Url.Action("GetAllFurnitures")">
+                                <img src="@Url.Content("~/Content/Images/meble.jpg")" />
+                            </a>
+                            <a class="link" href="@Url.Action("GetAllFurnitures")"><h2>Wszystkie produkty</h2></a>
+                        </center>
+                    </div>
+                </div>
+                <div class="shopSection">
+                    <div class="overlay">
+                        <center>
+                            <a href="@Url.Action("GetListOfNames")">
+                                <img src="@Url.Content("~/Content/Images/listamebli.jpg")" />
+                            </a>
+                            <a class="link" href="@Url.Action("GetListOfNames")"><h2>Lista produktów według nazwy</h2></a>
+                        </center>
+                    </div>
+                </div>
+                <div class="shopSection">
+                    <div class="overlay">
+                        <center>
+                            <a href="@Url.Action("ContactForm")">
+                                <img src="@Url.Content("~/Content/Images/contact.jpg")" />
+                            </a>
+                            <a class="link" href="@Url.Action("ContactForm")"><h2>Kontakt</h2></a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </div>
+</body>
+</html>

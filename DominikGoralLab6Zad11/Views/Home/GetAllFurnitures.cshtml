@@ -1,0 +1,35 @@
+﻿@model List<DominikGoralLab6Zad11.ViewModels.FurnitureVM>
+@{
+    ViewBag.Title = "GetAllFurnitures";
+}
+
+
+<html>
+<head>
+    @Styles.Render("~/Content/Styles.css")
+    <title>Get all furnitures</title>
+</head>
+<body>
+    <center>
+        <div id="tytul">Wszystkie produkty</div>
+    </center>
+    <div id="mainFrame">
+        @foreach (var furniture in Model)
+        {
+            <div class="eachProducts">
+                <div class="overlay">
+                    <img src="@furniture.Photo" alt="@furniture.Name" />
+                    <a class="link">
+                        <center>
+                            <h2>@furniture.Name</h2>
+                            <h4>Producent: @furniture.Manufacturer</h4>
+                            <h4>Typ: @furniture.Type</h4>
+                            <h4>Cena: @furniture.Price</h4>
+                        </center>
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿@model DominikGoralLab6Zad11.ViewModels.FurnitureVM
+@{
+    ViewBag.Title = "GetFurnitureByName";
+}
+
+<h2>GetFurnitureByName</h2>
+
+<html>
+<head>
+    <title>Get furniture by name</title>
+</head>
+<body>
+    <!-- Wyświetlenie mebli -->
+    <div id="mainFrame">
+        <div class="eachProducts">
+            <h2>Model: @Model.Name</h2>
+            <h4>Marka: @Model.Manufacturer</h4>
+            <h4>Typ: @Model.Type</h4>
+            <h4>Cena: @Model.Price</h4>
+            <img src="@Model.Photo" alt="@Model.Name" />
+        </div>
+    </div>
+</body>
+</html>

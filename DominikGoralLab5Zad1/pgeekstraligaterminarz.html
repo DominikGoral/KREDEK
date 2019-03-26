@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<!-- Dane o stronie -->
+<head>
+	<meta charset="utf-8" />
+	<link href="Style.css" rel="stylesheet" type="text/css"/>
+	<title> PGEEkstraligaTerminarz </title>
+</head>
+<!-- Wygląd strony -->
+<body>
+	<!-- Nagłówek strony, po kliknięciu łączymy się z nadrzędnymi stronami -->
+	<a href="pgeekstraliga.html">
+		<header>
+			PGE Ekstraliga	
+		</header>
+	</a>
+		<!-- Kontener główny, wszystko oprócz headera -->
+		<div id="container">
+			<!-- Kontener z paskiem menu do nawigacji strony -->
+			<div id="menu">
+				<!-- Poszczególne przyciski z paska menu, z łączami do tych stron -->
+				<a href="pgeekstraligatabela.html">
+					<div class="submenu">
+						<p>Tabela</p>
+					</div>
+				</a>
+				<a href="pgeekstraligaterminarz.html">
+					<div class="submenu">
+						<p>Terminarz</p>
+					</div>
+				</a>
+				<a href="pgeekstraligawyniki.html">
+					<div class="submenu">
+						<p>Wyniki</p>
+					</div>
+				</a>
+				<a href="pgeekstraligastatystyki.html">
+					<div class="submenu">
+						<p>Statystyki</p>
+					</div>
+				</a>
+			</div>
+			<!-- Kontener w który mamy główną zawartość jaką chcemy pokazać -->
+			<div id="mainFrame">
+				<!-- Tabela z terminarzem kolejek -->
+				<table class="round">
+					<tr>
+						<td colspan="8">DATA: 29.05.2018r.</td>
+					</tr>
+					<tr>
+						<td>Kolejka</td><td colspan="2">Gospodarz</td><td></td><td colspan="2">Goście</td>
+					</tr>
+					<tr>
+						<td rowspan="4">I</td><td><img src="herby/wtswroclaw.png" alt="wtswroclaw"></td><td>Sparta Wrocław</td><td> - </td><td>Unia Leszno</td><td><img src="herby/unialeszno.png" alt="unialeszno"></td>
+					</tr>
+					<tr>
+						<td><img src="herby/gkmgrudziadz.png" alt="gkmgrudziadz"></td><td>GKM Grudziądz</td><td> - </td><td>Włókniarz Częstochowa</td><td><img src="herby/wlokniarzczestochowa.png" alt="wlokniarzczestochowa"></td>
+					</tr>
+					<tr>
+						<td><img src="herby/uniatarnow.png" alt="uniatarnow"></td><td>Unia Tarnów</td><td> - </td><td>Falubaz Zielona Góra</td><td><img src="herby/falubazzg.png" alt="falubazzg"></td>
+					</tr>
+					<tr>
+						<td><img src="herby/stalgorzow.png" alt="stalgorzow"></td><td>Stal Gorzów</td><td> - </td><td>Apator Toruń</td><td><img src="herby/apatortorun.png" alt="apatortorun"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+</body>
+</html>

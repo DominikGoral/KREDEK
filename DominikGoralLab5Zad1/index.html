@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<!-- Dane o stronie -->
+<head>
+	<meta charset="utf-8" />
+	<link href="Style.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="css/fontello.css">
+	<title> Speedway(i)nfo </title>
+</head>
+<!-- Wygląd strony -->
+<body>
+	<!-- Nagłówek strony, po kliknięciu łączymy się z nadrzędnymi stronami -->
+	<header>
+		SPEEDWAY(i)nfo
+	</header>
+		<!-- Kontener główny, wszystko oprócz headera -->
+		<div id="container">
+			<!-- Kontener z główną zawartością strony startowej -->
+			<div id="mainFrameIndex">
+				<!-- Kontener z linkiem przenoszącym do sekcji o PGE Ekstalidze -->
+				<div class="picture">
+					<div class="overlay">
+						<img src="pgeekstraliga.png"  alt="pgeekstraliga">
+						<a class="link" href="pgeekstraliga.html"><span class="icon"><i class="icon-search"></i></span></a>
+					</div>
+				</div>		
+				<!-- Kontener z linkiem przenoszącym do sekcji o GP -->
+				<div class="picture">
+					<div class="overlay">
+						<img src="gp.jpg"  alt="speedwayGP">
+						<a class="link" href="gp.html"><span class="icon"><i class="icon-search"></i></span></a>
+					</div>
+				</div>
+				<!-- Kontener z linkiem przenoszącym do sekcji Quiz -->
+				<div class="picture">
+					<div class="overlay">
+						<img src="quiz.jpg"  alt="quiz">
+						<a class="link" href="quiz.html"><span class="icon"><i class="icon-search"></i></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Dołączenie skryptów z js -->
+		<script src="script.js"></script>
+		<script src="questions.js"></script>
+		<script src="quiz_controller.js"></script>
+		
+</body>
+
+</html>

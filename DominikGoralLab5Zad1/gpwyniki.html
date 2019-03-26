@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<!-- Dane o stronie -->
+<head>
+	<meta charset="utf-8" />
+	<link href="Style.css" rel="stylesheet" type="text/css"/>
+	<title> GPWyniki </title>
+</head>
+<!-- Wygląd strony -->
+<body>
+	<!-- Nagłówek strony, po kliknięciu łączymy się z nadrzędnymi stronami -->
+	<a href="gp.html">
+		<header>
+			PGE Ekstraliga	
+		</header>
+	</a>
+		<!-- Kontener główny, wszystko oprócz headera -->
+		<div id="container">
+			<!-- Kontener z paskiem menu do nawigacji strony -->
+			<div id="menu">
+				<!-- Poszczególne przyciski z paska menu, z łączami do tych stron -->
+				<a href="pgeekstraligatabela.html">
+					<div class="submenuGP">
+						<p>Wyniki</p>
+					</div>
+				</a>
+				<a href="gpklasyfikacja.html">
+					<div class="submenuGP">
+						<p>Klasyfikacja</p>
+					</div>
+				</a>
+			</div>
+			</div>
+			<!-- Kontener w który mamy główną zawartość jaką chcemy pokazać -->
+			<div id="mainFrame">
+				<!-- Tabela z wynikami poszczególnych rund -->
+					<table class="round">
+					<tr>
+						<td colspan="2">Runda</td><td>Data</td><td>Zwycięzca</td><td>II miejsce</td><td>III miejsce</td><td>IV miejsce</td>
+					</tr>
+					<tr>
+						<td>GP Polski w Warszawie</td><td><img src="flagi/polska.png" alt="polska"></td><td>12.05.2018r.</td><td>Tai Woffinden</td><td>Maciej Janowski</td><td>Fredrik Lindgren</td><td>Artiom Łaguta</td>
+					</tr>
+					<tr>
+						<td>GP Czech w Pradze </td><td><img src="flagi/czechy.png" alt="czechy"></td><td>26.05.2018r.</td><td>Fredrik Lindgren</td><td>Patryk Dudek</td><td>Emil Sayfutdinov</td><td>Tai Woffinden</td>
+					</tr>
+					<tr>
+						<td>GP Danii w Horsens</td><td><img src="flagi/dania.png" alt="dania"></td><td>30.06.2018r.</td><td>Tai Woffinden</td><td>Artiom Łaguta</td><td>Greg Hancock</td><td>Jason Doyle</td>
+					</tr>
+					<tr>
+						<td>GP Szwecji w Hallstavik</td><td><img src="flagi/szwecja.jpg" alt="szwecja"></td><td>12.05.2018r.</td><td>Maciej Janowski</td><td>Fredrik Lindgren</td><td>Bartosz Zmarzlik</td><td>Tai Woffinden</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+</body>
+</html>

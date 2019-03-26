@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<!-- Dane o stronie -->
+<head>
+	<meta charset="utf-8" />
+	<link href="Style.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="css/fontello.css">
+	<title> SpeedwayinfoQuiz </title>
+</head>
+<!-- Wygląd strony -->
+<body>
+	<!-- Nagłówek strony, po kliknięciu łączymy się z nadrzędnymi stronami -->
+	<a href="index.html">
+		<header>
+			SPEEDWAY(i)nfo
+		</header>
+	</a>
+	<!-- Kontener główny, wszystko oprócz headera -->
+	<div id="container">
+		<div id="menu">
+			<div id="question">
+				<div id="interiorQuestion">
+				</div>
+			</div>
+			<div class="answers">
+				<button id="button0" onclick="FirstAnswer()"><span id="choice0"></span></button>
+				<button id="button1" onclick="SecondAnswer()"><span id="choice1"></span></button>
+				<button id="button2" onclick="ThirdAnswer()"><span id="choice2"></span></button>
+				<button id="button3" onclick="FourthAnswer()"><span id="choice3"></span></button>
+			</div>
+			<button id="nextQuestion" onclick="CheckAnswer()">
+			Następne
+			</button>
+			<div id="result">
+			</div>
+		</div>
+	</div>
+	
+	<script src="script.js"></script>
+	<script src="questions.js"></script>
+	<script> Start()</script>
+	
+</body>
+</html>

@@ -1,0 +1,337 @@
+/* Styl ciała strony */
+body{
+	background-color:#e5fff0;
+	margin:0;
+}
+/* Styl nagłówka strony */
+header{
+	color: #2ed371;
+	font-family: Impact;
+	width:100%;
+	height:150px;
+	background-color:#c4ffdc;
+	font-size: 100px;
+	text-align: center;
+}
+/* Styl głównego pojemnika */
+#container{
+	width: 100%;
+	background-color: #e5fff0;
+	margin-left:auto;
+	margin-right:auto;
+}
+/* Styl paragrafów w pojemniku */
+#container p{
+	text-align: center;
+}
+/* Styl pojemnika z główną zawartością na stronie głównej */
+#mainFrameIndex{
+	width: 1158px;
+	margin-right:auto;
+	margin-left:auto;
+}
+/* Styl pojemnika z główną zawartością na pozostałych stronach */
+#mainFrame{
+	width: 1200px;
+	margin-right:auto;
+	margin-left:auto;
+	background-color:#c4ffdc;
+}
+/* Styl pól na obrazy ze strony głównej */
+.picture {
+	width: 376px;
+	height: 376px;
+	float: left;
+	padding: 5px
+}
+/* Styl obrazków ze strony głównej */
+.picture img {
+	width: 376px;
+	height: 376px;
+}
+/* Styl efektu przesłonięcia obrazków na głównej stronie */
+.overlay{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+/* Styl tabeli ze zwycięzcami ligi */
+#championsTable {
+	margin-top:40px;
+	margin-left:auto;
+	margin-right:auto;
+    width: 75%;
+    background-color:#87ffb7;
+}
+/* Styl tabeli ze zwycięzcami ligi */
+#championsTable td {
+	border: 1px solid black;
+    text-align: center;
+    padding-left: 0px;
+}
+/* Styl obrazków w tabeli ze zwycięzcami ligi */
+#championsTable img{
+	margin-left:5px;
+	margin-right:5px;
+	width:30px;
+	height:20px;
+}
+/* Styl tabeli drużyn */
+#teamsTable{
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+    width: 1200px;
+	background-color:#87ffb7;
+}
+/* Styl tabeli drużyn */
+#teamsTable td {
+    border: 1px solid black;
+    text-align: center;
+    padding-left: 0px;
+}
+/* Styl obrazków w tabeli drużyn */
+#teamsTable img{
+	margin-left:5px;
+	margin-right:5px;
+	width:20px;
+	height:20px;
+}
+/* Styl tabeli zawodników */
+#tableRidersStatistics{
+	margin-top:20px;
+	margin-left:0px;
+    width: 1200px;
+    background-color: #87ffb7;
+}
+/* Styl obrazków w tabeli zawodników */
+#tableRidersStatistics img {
+	margin-left:5px;
+	margin-right:5px;
+	width:30px;
+	height:20px;
+}
+/* Styl tabeli zawodników */
+#tableRidersStatistics td {
+    border: 1px solid black;
+    text-align: center;
+    padding-left: 0px;
+}
+/* Styl efektu przesłonięcia obrazków ze strony głównej */
+.overlay .link{
+	position: absolute;
+	display: block;
+	width:100%;
+	height:100%;
+	background-color:#27a38d;
+	left:0px;
+	top:0px ;
+	opacity:0;
+	transition: opacity 0.5s easy-in-out;
+}
+/* Styl efektu przesłonięcia obrazków ze strony głównej */
+.overlay:hover .link{
+	opacity: 0.9;
+}
+/*  */
+.icon{
+	display: block;
+	top: 35%;
+	left: 40%;
+	position: relative;
+	font-size:60px;
+}
+/* Styl elementów paska menu */
+.submenu{
+	float:left;
+	height:60px;
+	width:25%;
+	background-color:#1df279;
+	padding:0;
+}
+/* Styl paragrafów elementów paska menu */
+.submenu p {
+	font-size:25px;
+	margin-bottom:10px;
+}
+/* Zmiana koloru po najechaniu na sekcje z paska menu */
+.submenu:hover{
+	background-color:#2ed371;
+}
+/* Styl klasy kolejka ( tabela) */
+.round{
+	margin-top:20px;
+	margin-left:0px;
+    width: 1200px;
+    background-color: #87ffb7;
+}
+/* Styl klasy kolejka ( tabela) */
+.round td{
+	border: 1px solid black;
+    text-align: center;
+    padding-left: 0px;
+}
+/* Styl obrazków w tabeli kolejka */
+.round img {
+	margin-left:5px;
+	margin-right:5px;
+	width:30px;
+	height:20px;
+}
+/* Styl paska menu */
+#menu {
+	padding:0;
+	margin:0;
+	width: 100%;
+	height: 60px;
+}
+/* Styl miejsca na zdjęcie na stronie pgeekstraliga */
+#photo {
+	padding-left:5%;
+	padding-top: 40px;
+	width: 90%;
+}
+/* Styl zdjęcia na stronie pgeekstraliga */
+#photo img{
+	width: 100%;
+}
+/* Styl miejsca na tekst na stronie pgeekstraliga */
+#text{
+	padding-left:5%;
+	padding-top:10px;
+	width: 90%;
+	text-align:left;
+}
+/* Styl tesktu na stronie pgeekstraliga */
+#text p{
+	text-align:left;
+}
+/* Styl lewego fragmentu pola głównego pgeekstraliga */
+#left {
+	float:left;
+	width:600px;
+	height: 800px;
+	padding-bottom: 20px;
+	background-color:#c4ffdc;
+}
+/* Styl prawego fragmentu pola głównego pgeekstraliga */
+#right {
+	float:left;
+	width:600px;
+	height: 800px;
+	padding-bottom: 20px;
+	background-color:#c4ffdc;
+}
+/* Styl hiperłączy */
+a{
+	text-decoration:none;
+}
+/* Styl pola na pytanie w quiz */
+#question {
+	height:120px;
+	width:600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:10px;
+	background-color: #2ed371;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+#interiorQuestion{
+	height:80px;
+	width:550px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family:sans-serif;
+	font-size:30px;
+	background-color: #e5fff0;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+/* Styl pól pod przyciski do odpowiedzi w quiz */
+.answers{
+	width: 400px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+}
+/* Styl przycisków do odpowiedzi w quiz */
+#button0, #button1, #button2, #button3 {
+	background-color: #2ed371;
+	width:400px;
+	height:100px;
+	font-size:20px;
+	color:#fff;
+	border: 1px solid #1d3c6a;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+/* Efekty specjalne dla przycisków */
+#button0:hover, #button1:hover, #button2:hover, #button3:hover{
+	cursor:pointer;
+	background-color:#87ffb7;
+}
+#button0:focus, #button1:focus, #button2:focus, #button3:focus{
+	outline:0;
+}
+/* Styl " stopki" strony */
+#progress {
+	color: #2b2b2b;
+	font-size:18px;
+}
+.submenuGP{
+	float:left;
+	height:60px;
+	width:50%;
+	background-color:#1df279;
+	padding:0;
+}
+/* Styl paragrafów elementów paska menu */
+.submenuGP p {
+	font-size:25px;
+	margin-bottom:10px;
+}
+/* Zmiana koloru po najechaniu na sekcje z paska menu */
+.submenuGP:hover{
+	background-color:#2ed371;
+}
+#interiorQuestion{
+	text-align:center;
+	font-family:sans-serif;
+	font-size:30px;
+	padding-top:20px;
+}
+#nextQuestion{
+	width:200px;
+	height:30px;
+	font-family:impact;
+	text-align:center;
+	margin-left: 800px;
+	background-color: #2ed371;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<!-- Dane o stronie -->
+<head>
+	<meta charset="utf-8" />
+	<link href="Style.css" rel="stylesheet" type="text/css"/>
+	<title> PGEEkstraligaTabela </title>
+</head>
+<!-- Wygląd strony -->
+<body>
+	<!-- Nagłówek strony, po kliknięciu łączymy się z nadrzędnymi stronami -->
+	<a href="pgeekstraliga.html">
+		<header>
+			PGE Ekstraliga
+		</header>
+	</a>
+		<!-- Kontener główny, wszystko oprócz headera -->
+		<div id="container">
+			<!-- Kontener z paskiem menu do nawigacji strony -->
+			<div id="menu">
+				<!-- Poszczególne przyciski z paska menu, z łączami do tych stron -->
+				<a href="pgeekstraligatabela.html">
+					<div class="submenu">
+						<p>Tabela</p>
+					</div>
+				</a>
+				<a href="pgeekstraligaterminarz.html">
+					<div class="submenu">
+						<p>Terminarz</p>
+					</div>
+				</a>
+				<a href="pgeekstraligawyniki.html">
+					<div class="submenu">
+						<p>Wyniki</p>
+					</div>
+				</a>
+				<a href="pgeekstraligastatystyki.html">
+					<div class="submenu">
+						<p>Statystyki</p>
+					</div>
+				</a>
+			</div>
+			<!-- Kontener w który mamy główną zawartość jaką chcemy pokazać -->
+			<div id="mainFrame">
+			<!-- Tabela z punktacją drużyn -->
+				<table id="teamsTable">
+					<tr>
+						<td>Miejsce</td><td colspan="2">Drużyna</td><td>Mecze</td><td>W</td><td>D</td><td>L</td><td>Punkty</td>
+					</tr>
+					<tr>
+						<td>1.</td><td>Unia Leszno</td><td><img src="herby/unialeszno.png" alt="unialeszno"></td><td>14</td><td>10</td><td>2</td><td>2</td><td>29</td>
+					</tr>
+					<tr>
+						<td>2.</td><td>Stal Gorzów</td><td><img src="herby/stalgorzow.png" alt="stalgorzow"></td><td>14</td><td>8</td><td>1</td><td>5</td><td>21</td>
+					</tr>
+					<tr>
+						<td>3.</td><td>Włókniarz Częstochowa</td><td><img src="herby/wlokniarzczestochowa.png" alt="wlokniarzczestochowa"></td><td>14</td><td>7</td><td>2</td><td>5</td><td>19</td>
+					</tr>
+					<tr>
+						<td>4.</td><td>Sparta Wrocław</td><td><img src="herby/wtswroclaw.png" alt="wtswroclaw"></td><td>14</td><td>7</td><td>2</td><td>5</td><td>19</td>
+					</tr>
+					<tr>
+						<td>5.</td><td>Get Well Toruń</td><td><img src="herby/apatortorun.png" alt="apatortorun"></td><td>14</td><td>6</td><td>1</td><td>7</td><td>18</td>
+					</tr>
+					<tr>
+						<td>6.</td><td>GKM Grudziądz</td><td><img src="herby/gkmgrudziadz.png" alt="gkmgrudziadz"></td><td>14</td><td>4</td><td>2</td><td>8</td><td>12</td>
+					</tr>
+					<tr>
+						<td>7.</td><td>Falubaz Zielona Góra</td><td><img src="herby/falubazzg.png" alt="falubazzg"></td><td>14</td><td>4</td><td>0</td><td>10</td><td>10</td>
+					</tr>
+					<tr>
+						<td>8.</td><td>Unia Tarnów</td><td><img src="herby/uniatarnow.png" alt="uniatarnow"></td><td>14</td><td>5</td><td>0</td><td>9</td><td>10</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+</body>
+</html>

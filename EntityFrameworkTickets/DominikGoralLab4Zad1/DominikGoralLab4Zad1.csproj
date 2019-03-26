@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D7B8931-1A2F-4E94-A4C6-D6104A5FD55C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DominikGoralLab4Zad1</RootNamespace>
+    <AssemblyName>DominikGoralLab4Zad1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Basket.cs">
+      <DependentUpon>ModelDataBaseDominikGoralLab4Zadanie1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Flight.cs">
+      <DependentUpon>ModelDataBaseDominikGoralLab4Zadanie1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainForEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainForEmployee.Designer.cs">
+      <DependentUpon>FormMainForEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainForUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainForUsers.Designer.cs">
+      <DependentUpon>FormMainForUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelDataBaseDominikGoralLab4Zadanie1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDataBaseDominikGoralLab4Zadanie1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelDataBaseDominikGoralLab4Zadanie1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDataBaseDominikGoralLab4Zadanie1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelDataBaseDominikGoralLab4Zadanie1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDataBaseDominikGoralLab4Zadanie1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations.cs" />
+    <Compile Include="Planes.cs">
+      <DependentUpon>ModelDataBaseDominikGoralLab4Zadanie1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignInAndSignUpService.cs" />
+    <Compile Include="Tickets.cs">
+      <DependentUpon>ModelDataBaseDominikGoralLab4Zadanie1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlBasket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBasket.Designer.cs">
+      <DependentUpon>UserControlBasket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDurationEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDurationEditor.Designer.cs">
+      <DependentUpon>UserControlDurationEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlEmployeeLogIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlEmployeeLogIn.Designer.cs">
+      <DependentUpon>UserControlEmployeeLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlUserEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlUserEditor.Designer.cs">
+      <DependentUpon>UserControlUserEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlTicketEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlTicketEditor.Designer.cs">
+      <DependentUpon>UserControlTicketEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlTicketsForUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlTicketsForUser.Designer.cs">
+      <DependentUpon>UserControlTicketsForUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlUserLogIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlUserLogIn.Designer.cs">
+      <DependentUpon>UserControlUserLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlUserRegister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlUserRegister.Designer.cs">
+      <DependentUpon>UserControlUserRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <DependentUpon>ModelDataBaseDominikGoralLab4Zadanie1.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormMainForEmployee.resx">
+      <DependentUpon>FormMainForEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainForUsers.resx">
+      <DependentUpon>FormMainForUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControlBasket.resx">
+      <DependentUpon>UserControlBasket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDurationEditor.resx">
+      <DependentUpon>UserControlDurationEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlEmployeeLogIn.resx">
+      <DependentUpon>UserControlEmployeeLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlUserEditor.resx">
+      <DependentUpon>UserControlUserEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTicketEditor.resx">
+      <DependentUpon>UserControlTicketEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTicketsForUser.resx">
+      <DependentUpon>UserControlTicketsForUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlUserLogIn.resx">
+      <DependentUpon>UserControlUserLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlUserRegister.resx">
+      <DependentUpon>UserControlUserRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="ModelDataBaseDominikGoralLab4Zadanie1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelDataBaseDominikGoralLab4Zadanie1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelDataBaseDominikGoralLab4Zadanie1.edmx.diagram">
+      <DependentUpon>ModelDataBaseDominikGoralLab4Zadanie1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogInButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegisterButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplyButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CancelButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmployeeInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BasketIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogOutIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaneIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddUserIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundCut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundForPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundForPanel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TicketButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaneButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TimeButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelDataBaseDominikGoralLab4Zadanie1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDataBaseDominikGoralLab4Zadanie1.edmx</DependentUpon>
+      <LastGenOutput>ModelDataBaseDominikGoralLab4Zadanie1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelDataBaseDominikGoralLab4Zadanie1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDataBaseDominikGoralLab4Zadanie1.edmx</DependentUpon>
+      <LastGenOutput>ModelDataBaseDominikGoralLab4Zadanie1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
